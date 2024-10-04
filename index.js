@@ -18,7 +18,7 @@ const pythonExePath = isDevelopment()
   : path.join("/home/ubuntu/miniconda", "envs", "myenv", "bin", "python3");
 
 app.get("/", (req, res) => {
-  res.send("Hello from Node server! test");
+  res.send("Hello from Node server!");
 });
 
 app.get("/random/:count", (req, res) => {
